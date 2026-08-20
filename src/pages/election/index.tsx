@@ -200,7 +200,11 @@ export default function ElectionPage() {
                       提名理由
                     </Space>
                   ),
-                  children: <Text>{candidate.nominationReason}</Text>,
+                  children: (
+                    <Text style={{ whiteSpace: "pre-line" }}>
+                      {candidate.nominationReason}
+                    </Text>
+                  ),
                 },
                 {
                   key: "contributions",
@@ -210,7 +214,11 @@ export default function ElectionPage() {
                       上届贡献
                     </Space>
                   ),
-                  children: <Text>{candidate.previousContributions}</Text>,
+                  children: (
+                    <Text style={{ whiteSpace: "pre-line" }}>
+                      {candidate.previousContributions}
+                    </Text>
+                  ),
                 },
                 {
                   key: "platform",
@@ -220,7 +228,11 @@ export default function ElectionPage() {
                       本届主张
                     </Space>
                   ),
-                  children: <Text>{candidate.currentPlatform}</Text>,
+                  children: (
+                    <Text style={{ whiteSpace: "pre-line" }}>
+                      {candidate.currentPlatform}
+                    </Text>
+                  ),
                 },
                 {
                   key: "recommendations",
@@ -230,7 +242,11 @@ export default function ElectionPage() {
                       推荐语
                     </Space>
                   ),
-                  children: <Text>{candidate.recommendations}</Text>,
+                  children: (
+                    <Text style={{ whiteSpace: "pre-line" }}>
+                      {candidate.recommendations}
+                    </Text>
+                  ),
                 },
               ]}
             />
