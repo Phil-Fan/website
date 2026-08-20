@@ -536,7 +536,7 @@ export default function EventsPage() {
                     )}
                   </div>
                   <p className={styles.listEventDescription}>
-                    {previewDescription(event.desc)}
+                    {previewDescription(event.desc || event.description)}
                   </p>
                 </div>
                 <div className={styles.listCell}>
